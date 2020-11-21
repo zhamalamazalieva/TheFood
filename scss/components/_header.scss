@@ -1,0 +1,91 @@
+.header{
+    padding: 48px 0 20px;
+    background-color: $white;
+    z-index: 5;
+    position: fixed;
+    width: 100%;
+    &__row{
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo{
+        display: flex;
+        align-items: center;
+    }
+    &__logo-name{
+        color: $orange;
+        @include font($font-poppins,500, 25px, 1.5);
+        margin-left: 20px;
+        padding-top: 15px;
+    }
+    &__block--right, &__system-elements{
+        display: flex;
+        align-items:center;
+    }
+    &__nav{
+        margin-right: 140px;
+        $self:&;
+    }
+    &__system-elements{
+        .search{
+            margin-right: 30px;
+        }
+        .cart{
+            position: relative;
+            &__counter{
+                position: absolute;
+                bottom: 0;
+                left: 70%;
+                transform: translateY(-70%);
+                min-width: 16px;
+                min-height: 16px;
+                padding: 3px 3px;
+                border-radius: 50%;
+                background-color:red;
+                color: white;
+                @include font($font-poppins,200, 12px, 1);
+                text-align: center;
+            }
+        }
+    }
+}
+.nav{
+    &__menu{
+        display: flex;
+    }
+    &__item{
+        margin-right: 46px;
+        &:last-child{
+            margin: 0;
+        }
+    }
+    &__link{
+        color: $black;
+        @include font($font-poppins, 400, 16px, 1.5);
+        transition: 0.3s;
+        position: relative;
+        &:hover{
+            color: $orange;
+        }
+    }
+    &__dropdown{
+        &::before{
+            content:"";
+            width: 8px;
+            height: 8px;
+            border-left: 2px solid $black;
+            border-bottom: 2px solid $black;
+            background-color: transparent;
+            transform: rotate(-45deg);
+            position: absolute;
+            top: 5px;
+            left: -20px;
+            transition: 0.3s;
+            &:hover {
+                &::before {
+                    border-color: $orange;
+                }
+            }
+        }
+    }
+}

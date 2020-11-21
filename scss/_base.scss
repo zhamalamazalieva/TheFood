@@ -1,0 +1,22 @@
+body{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+a, span{
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style-type: none;
+}
+.container{
+    max-width: 1640px;
+    width:100%;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
