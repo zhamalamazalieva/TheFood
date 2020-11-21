@@ -1,0 +1,64 @@
+.hero{
+    padding-top: 147px;
+    .container{
+        min-height: 900px;
+    }
+    &__row{
+        position: relative;
+        z-index: 5;
+        padding-top: 120px;
+    }
+    &__title{
+        @include font($font-cream, 700,64px, 1.5);
+    }
+    &__description {
+		margin: 50px 0 115px;
+		font-size: 18px;
+		color: $darkGray;
+    }
+    &__label {
+		margin-left: 18px;
+		input {
+            @include font($font-poppins, 600, 16px, 1.5);
+			padding: 14px 50px 14px 25px;
+			border: none;
+			outline: none;
+			border-radius: 8px;
+			background-color: $gray;
+			color: $darkGray;
+		}
+    }
+    &__search {
+		margin-left: -50px;
+    }
+    &__img{
+        max-width: 675px;
+        margin-top: -75px;
+    }
+    &__item--right{
+        text-align: right;
+    }
+    &__mint{
+        position: absolute !important;
+		left: auto !important;
+		top: auto !important;
+		bottom: 20vh !important;
+		right: 50% !important;
+        z-index: -1 !important;
+        &--small {
+			position: absolute !important;
+			left: 50% !important;
+			top: 25% !important;
+			z-index: -1 !important;
+		}
+
+    }
+    &__pepper {
+		position: absolute !important;
+		left: -10% !important;
+		top: 10% !important;
+		z-index: -3 !important;
+		transform: translateX(-50%);
+	}
+    
+}

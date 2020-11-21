@@ -17,6 +17,39 @@ ul li{
     margin: 0 auto;
 }
 .row{
-    display: flex;
+    display: flex !important;
     flex-wrap: wrap;
 }
+.orange{
+    color: $orange;
+}
+
+.btn {
+    @include font($font-poppins,600, 16px, 1.5);
+    padding: 14px 32px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.btn--orange{
+    background-color: $orange;
+    transition: 0.3s;
+    &:hover{
+        background-color: $black;
+        color: $orange;
+    }
+}
+
+.btn-black {
+    background-color: $black;
+    color: $white;
+    transition: 0.3s;
+    &:hover {
+      background-color: $orange;
+      color: $black;
+    }
+  }
+  .relative{
+      position: relative;
+  }

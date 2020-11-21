@@ -1,4 +1,58 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 .col-2 {
   width: 16.66666666%;
 }
@@ -11,8 +65,16 @@
   width: 25%;
 }
 
+.col-5 {
+  width: 41.666%;
+}
+
 .col-6 {
   width: 50%;
+}
+
+.col-7 {
+  width: 58.333333333%;
 }
 
 .col-12 {
@@ -44,11 +106,54 @@ ul li {
 }
 
 .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.orange {
+  color: #ffbe00;
+}
+
+.btn {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 14px 32px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn--orange {
+  background-color: #ffbe00;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.btn--orange:hover {
+  background-color: #222222;
+  color: #ffbe00;
+}
+
+.btn-black {
+  background-color: #222222;
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.btn-black:hover {
+  background-color: #ffbe00;
+  color: #222222;
+}
+
+.relative {
+  position: relative;
 }
 
 .header {
@@ -174,5 +279,87 @@ ul li {
 
 .nav__dropdown::before:hover::before {
   border-color: #ffbe00;
+}
+
+.hero {
+  padding-top: 147px;
+}
+
+.hero .container {
+  min-height: 900px;
+}
+
+.hero__row {
+  position: relative;
+  z-index: 5;
+  padding-top: 120px;
+}
+
+.hero__title {
+  font-family: "Fresh Cream";
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1.5;
+}
+
+.hero__description {
+  margin: 50px 0 115px;
+  font-size: 18px;
+  color: #9e9e9e;
+}
+
+.hero__label {
+  margin-left: 18px;
+}
+
+.hero__label input {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 14px 50px 14px 25px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  background-color: #efefef;
+  color: #9e9e9e;
+}
+
+.hero__search {
+  margin-left: -50px;
+}
+
+.hero__img {
+  max-width: 675px;
+  margin-top: -75px;
+}
+
+.hero__item--right {
+  text-align: right;
+}
+
+.hero__mint {
+  position: absolute !important;
+  left: auto !important;
+  top: auto !important;
+  bottom: 20vh !important;
+  right: 50% !important;
+  z-index: -1 !important;
+}
+
+.hero__mint--small {
+  position: absolute !important;
+  left: 50% !important;
+  top: 25% !important;
+  z-index: -1 !important;
+}
+
+.hero__pepper {
+  position: absolute !important;
+  left: -10% !important;
+  top: 10% !important;
+  z-index: -3 !important;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 /*# sourceMappingURL=index.css.map */
