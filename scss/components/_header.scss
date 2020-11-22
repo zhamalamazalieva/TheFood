@@ -79,7 +79,7 @@
             transform: rotate(-45deg);
             position: absolute;
             top: 5px;
-            left: -20px;
+            right: -20px;
             transition: 0.3s;
             &:hover {
                 &::before {
