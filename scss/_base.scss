@@ -79,3 +79,9 @@ ul li{
         left: 66.66666%;
     }
 }
+.section__title{
+    @include font($font-cream, 600, 36px, 1);
+}
+.section__description{
+    @include font($font-poppins, 400, 16px,1.5);
+}
